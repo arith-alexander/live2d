@@ -8,6 +8,7 @@ var setBackground = function(element){
 	];
 
 	var image = backgrounds[Math.floor(Math.random()*backgrounds.length)];
+	console.log(image);
 	var path = imagepath + image;
 	element.css('background-image', 'url('+path+')');
 	
@@ -15,9 +16,9 @@ var setBackground = function(element){
 
 $(document).ready(function(){
 	//set up the bg
-	getBackground($("#glcanvas"));
+	setBackground($("#glcanvas"));
 
-	
+	//set heigth of canvas container
 	$(".chara-view").css('height', $(document).innerHeight());
 	
 
