@@ -11,7 +11,8 @@ var quizQuestions = [{
 					"en" : "Legs",
 					"jp" : "足"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 500
 			},
 			{
 				"aID" : 1,
@@ -19,7 +20,8 @@ var quizQuestions = [{
 					"en" : "Dancing",
 					"jp" : "ダンシング！"
 				},
-				"correct" : false	
+				"correct" : false,
+				"points" : 500	
 			},
 			{
 				"aID" : 2,
@@ -27,7 +29,8 @@ var quizQuestions = [{
 					"en" : "Voice",
 					"jp" : "声"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 500 	
 			},
 			{
 				"aID" : 3,
@@ -35,13 +38,14 @@ var quizQuestions = [{
 					"en" : "Hair",
 					"jp" : "髪"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 500 	
 			}]									
 	}],
 	"q2" : [{
 		"text" : {
 			"en" : "OH YES! MTT-BRAND OVENS! ROASTING! TOASTING! BURNING! CHARRING! HOW HOT CAN THEY GET, DARLING?",
-			"jp" : ""
+			"jp" : "OH YES! MTTブランドのオーブン！ロースト！トースト！大炎上！消し炭！熱は何度まで上げられるでしょうかダーリング？"
 		},
 		"answers" : [
 			{
@@ -79,158 +83,158 @@ var quizQuestions = [{
 	}],
 	"q3" : [{
 		"text" : {
-			"en" : "",
-			"jp" : ""
+			"en" : "What's the prize for answering correctly?",
+			"jp" : "このクイズの賞品はどれ？"
 		},
 		"answers" : [
 			{
 				"aID" : 0,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "More questions",
+					"jp" : "次のクイズ"
 				},
 				"correct" : true
 			},
 			{
 				"aID" : 1,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "A new car",
+					"jp" : "新車"
 				},
 				"correct" : false	
 			},
 			{
 				"aID" : 2,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Money",
+					"jp" : "お金"
 				},
 				"correct" : false 	
 			},
 			{
 				"aID" : 3,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Mercy",
+					"jp" : "慈悲"
 				},
 				"correct" : false 	
 			}]
 	}],
 	"q4" : [{
 		"text" : {
-			"en" : "",
-			"jp" : ""
+			"en" : "What are robots made of?",
+			"jp" : "ロボットは何でできてる？"
 		},
 		"answers" : [
 			{
 				"aID" : 0,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Metal and Magic",
+					"jp" : "金属と魔法"
 				},
 				"correct" : true
 			},
 			{
 				"aID" : 1,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Hopes and Dreams",
+					"jp" : "夢と希望"
 				},
 				"correct" : false	
 			},
 			{
 				"aID" : 2,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Snips and Snails",
+					"jp" : "チョキっとカタツムリ"
 				},
 				"correct" : false 	
 			},
 			{
 				"aID" : 3,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Sugar and Spice",
+					"jp" : "お砂糖とスパイス"
 				},
 				"correct" : false 	
 			}]	
 	}],
 	"q5" : [{
 		"text" : {
-			"en" : "",
-			"jp" : ""
+			"en" : "How many fireflies in this jar?",
+			"jp" : "この便の中にホタルは何匹"
 		},
 		"answers" : [
 			{
 				"aID" : 0,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "54",
+					"jp" : "54"
 				},
 				"correct" : true
 			},
 			{
 				"aID" : 1,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "53",
+					"jp" : "53"
 				},
 				"correct" : false	
 			},
 			{
 				"aID" : 2,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "52",
+					"jp" : "52"
 				},
 				"correct" : false 	
 			},
 			{
 				"aID" : 3,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "51",
+					"jp" : "51"
 				},
 				"correct" : false 	
 			}]	
 	}],
 	"q6" : [{
 		"text" : {
-			"en" : "",
-			"jp" : ""
+			"en" : "Would you smooch a ghost?",
+			"jp" : "幽霊とキスしたい？"
 		},
 		"answers" : [
 			{
 				"aID" : 0,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Heck Yeah",
+					"jp" : "もちろん"
 				},
 				"correct" : true
 			},
 			{
 				"aID" : 1,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Heck Yeah",
+					"jp" : "もちろん"
 				},
-				"correct" : false	
+				"correct" : true
 			},
 			{
 				"aID" : 2,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Heck Yeah",
+					"jp" : "もちろん"
 				},
-				"correct" : false 	
+				"correct" : true
 			},
 			{
 				"aID" : 3,
 				"text" : {
-					"en" : "",
-					"jp" : ""
+					"en" : "Heck Yeah",
+					"jp" : "もちろん"
 				},
-				"correct" : false 	
+				"correct" : true
 			}]	
 	}],
 	"q7" : [{
@@ -389,4 +393,28 @@ var quizQuestions = [{
 				"correct" : false 	
 			}]	
 	}]									
-}]
+}];
+
+class quizQuestion {
+	constructor(){
+		var qInfo = quizQuestions[0]["q1"];
+		//console.log(qInfo);
+		this.text = qInfo["text"];
+		//this.text.jp = qInfo["text"]["jp"];
+		this.answers = [];
+		this.value = 500;
+
+		//var a = qInfo["answers"]
+
+		//for(i=0;i <a.length; i++){
+		//	var answer = {};
+		//	answer.text.en = a["text"]["en"];
+		//	answer.text.jp = a["text"]["jp"];
+	}
+	
+}
+
+
+q = new quizQuestion;
+console.log(q);
+console.log("Hello World");
