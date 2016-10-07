@@ -40,7 +40,7 @@ function displayQuestion(question){
 		$(this).attr("data-score", thisanswer.points);
 		$(this).attr("data-aID", 0);
 		$(this).click(function(){
-			clickAnswer(thisanswer);
+			$(this).css("background-color", "pink");
 
 		});
 
