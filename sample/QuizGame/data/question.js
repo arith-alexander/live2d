@@ -12,7 +12,7 @@ var quizQuestions = [{
 					"jp" : "足"
 				},
 				"correct" : true,
-				"points" : 500
+				"points" : 1000
 			},
 			{
 				"aID" : 1,
@@ -286,7 +286,6 @@ function Quiz() {
 function populateQuestions(dataObject){
 	var questionArray = [];
 	for(var key in dataObject){
-		console.log("??");
 		var question = {};
 		question.text = dataObject[key][0]["text"];
 		question.answers = dataObject[key][0]["answers"];
@@ -296,44 +295,35 @@ function populateQuestions(dataObject){
 }
 
 function displayScore(score){
-	zeroes = "";
-	console.log(score.length);
-	diff = 4 - score.toString.length;
-	if(diff > 0){
-		for(i=1;i<diff;i++){
-			zeroes+= "0";
-			console.log(zeroes);
-		}
-		score = zeroes+score;
-	}
+
 	$("#score").html(score);
 }
 
-function clickAnswer(answerObject){
-	if(answerObject["correct"]){
-		console.log("That's Right!");
-		console.log(answerObject)
-	}else{
-		console.log("NOPE!");
-	}
+function updateScore(points, quiz){
+	currentScore = quiz.score;
+	newScore= points + currentScore;
+	quiz.score = newScore;
+	return newScore;
 }
 
-function displayQuestion(question){
+function displayQuestion(question, q= quizObj){
+	console.log(q);
 	var answers = question["answers"];
 	$("#question .shade p").html(question.text.jp);
 	answerboxes = $("#answerbox ul li");
-	console.log(answerboxes);
 	$.each(answerboxes, function(){
+		console.log(q);
 		thisanswer = answers.pop();
-		console.log(thisanswer);
-		$(this).html(thisanswer["text"]["jp"]);
+		$(this).html(thisanswer.text.jp);
 		$(this).attr("data-score", thisanswer.points);
 		$(this).attr("data-aID", 0);
 		$(this).click(function(){
-			$(this).css("background-color", "pink");
-
+			var points = parseInt($(this).attr("data-score"));
+			displayScore(updateScore(points, q));
 		});
+
+
 	})
-
-
 }
+
+
