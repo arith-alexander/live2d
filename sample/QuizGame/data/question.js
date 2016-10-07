@@ -54,7 +54,8 @@ var quizQuestions = [{
 					"en" : "UP TO NINE THOUSAND DEGREES!",
 					"jp" : "9000°"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 500
 			},
 			{
 				"aID" : 1,
@@ -62,7 +63,8 @@ var quizQuestions = [{
 					"en" : "OVER NINE THOUSAND!",
 					"jp" : "八千以上だ!"
 				},
-				"correct" : false	
+				"correct" : false,
+				"points" : 9000	
 			},
 			{
 				"aID" : 2,
@@ -70,7 +72,8 @@ var quizQuestions = [{
 					"en" : "1.41679 x 10^32 Kelvin",
 					"jp" : "1.41679 x 10^32 ケルビン"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			},
 			{
 				"aID" : 3,
@@ -78,7 +81,8 @@ var quizQuestions = [{
 					"en" : "451° f",
 					"jp" : "451° 華氏"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			}]
 	}],
 	"q3" : [{
@@ -93,7 +97,8 @@ var quizQuestions = [{
 					"en" : "More questions",
 					"jp" : "次のクイズ"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 500
 			},
 			{
 				"aID" : 1,
@@ -101,7 +106,8 @@ var quizQuestions = [{
 					"en" : "A new car",
 					"jp" : "新車"
 				},
-				"correct" : false	
+				"correct" : false,
+				"points" : 0	
 			},
 			{
 				"aID" : 2,
@@ -109,7 +115,8 @@ var quizQuestions = [{
 					"en" : "Money",
 					"jp" : "お金"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			},
 			{
 				"aID" : 3,
@@ -117,7 +124,8 @@ var quizQuestions = [{
 					"en" : "Mercy",
 					"jp" : "慈悲"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0	
 			}]
 	}],
 	"q4" : [{
@@ -132,7 +140,8 @@ var quizQuestions = [{
 					"en" : "Metal and Magic",
 					"jp" : "金属と魔法"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 500
 			},
 			{
 				"aID" : 1,
@@ -140,7 +149,8 @@ var quizQuestions = [{
 					"en" : "Hopes and Dreams",
 					"jp" : "夢と希望"
 				},
-				"correct" : false	
+				"correct" : false,
+				"points" : 0	
 			},
 			{
 				"aID" : 2,
@@ -148,7 +158,8 @@ var quizQuestions = [{
 					"en" : "Snips and Snails",
 					"jp" : "チョキっとカタツムリ"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			},
 			{
 				"aID" : 3,
@@ -156,7 +167,8 @@ var quizQuestions = [{
 					"en" : "Sugar and Spice",
 					"jp" : "お砂糖とスパイス"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			}]	
 	}],
 	"q5" : [{
@@ -171,7 +183,8 @@ var quizQuestions = [{
 					"en" : "54",
 					"jp" : "54"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 500
 			},
 			{
 				"aID" : 1,
@@ -179,7 +192,8 @@ var quizQuestions = [{
 					"en" : "53",
 					"jp" : "53"
 				},
-				"correct" : false	
+				"correct" : false,
+				"points" : 0	
 			},
 			{
 				"aID" : 2,
@@ -187,7 +201,8 @@ var quizQuestions = [{
 					"en" : "52",
 					"jp" : "52"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			},
 			{
 				"aID" : 3,
@@ -195,7 +210,8 @@ var quizQuestions = [{
 					"en" : "51",
 					"jp" : "51"
 				},
-				"correct" : false 	
+				"correct" : false,
+				"points" : 0 	
 			}]	
 	}],
 	"q6" : [{
@@ -210,7 +226,8 @@ var quizQuestions = [{
 					"en" : "Heck Yeah",
 					"jp" : "もちろん"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 1000
 			},
 			{
 				"aID" : 1,
@@ -218,7 +235,8 @@ var quizQuestions = [{
 					"en" : "Heck Yeah",
 					"jp" : "もちろん"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 1000
 			},
 			{
 				"aID" : 2,
@@ -226,7 +244,8 @@ var quizQuestions = [{
 					"en" : "Heck Yeah",
 					"jp" : "もちろん"
 				},
-				"correct" : true
+				"correct" : true,
+				"points" : 1000
 			},
 			{
 				"aID" : 3,
@@ -234,163 +253,8 @@ var quizQuestions = [{
 					"en" : "Heck Yeah",
 					"jp" : "もちろん"
 				},
-				"correct" : true
-			}]	
-	}],
-	"q7" : [{
-		"text" : {
-			"en" : "",
-			"jp" : ""
-		},
-		"answers" : [
-			{
-				"aID" : 0,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : true
-			},
-			{
-				"aID" : 1,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false	
-			},
-			{
-				"aID" : 2,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			},
-			{
-				"aID" : 3,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			}]	
-	}],
-	"q8" : [{
-		"text" : {
-			"en" : "",
-			"jp" : ""
-		},
-		"answers" : [
-			{
-				"aID" : 0,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : true
-			},
-			{
-				"aID" : 1,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false	
-			},
-			{
-				"aID" : 2,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			},
-			{
-				"aID" : 3,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			}]	
-	}],
-	"q9" : [{
-		"text" : {
-			"en" : "",
-			"jp" : ""
-		},
-		"answers" : [
-			{
-				"aID" : 0,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : true
-			},
-			{
-				"aID" : 1,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false	
-			},
-			{
-				"aID" : 2,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			},
-			{
-				"aID" : 3,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			}]	
-	}],
-	"q10" : [{
-		"text" : {
-			"en" : "",
-			"jp" : ""
-		},
-		"answers" : [
-			{
-				"aID" : 0,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : true
-			},
-			{
-				"aID" : 1,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false	
-			},
-			{
-				"aID" : 2,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
-			},
-			{
-				"aID" : 3,
-				"text" : {
-					"en" : "",
-					"jp" : ""
-				},
-				"correct" : false 	
+				"correct" : true,
+				"points" : 1000
 			}]	
 	}]									
 }];
