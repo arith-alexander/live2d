@@ -31,16 +31,30 @@ function displayScore(score){
 function displayQuestion(question){
 	var answers = question["answers"];
 	$("#question .shade p").html(question.text.jp);
-	answerboxes = $("answerbox ul li");
+	answerboxes = $("#answerbox ul li");
 	console.log(answerboxes);
 	$.each(answerboxes, function(){
 		thisanswer = answers.pop();
-		this.html(thisanswer.text.jp);
-		this.attr("data-score", thisanswer.points);
-		this.attr("data-aID", 0);
+		console.log(thisanswer);
+		$(this).html(thisanswer["text"]["jp"]);
+		$(this).attr("data-score", thisanswer.points);
+		$(this).attr("data-aID", 0);
+		$(this).click(function(){
+			clickAnswer(thisanswer);
+
+		});
 
 
 	})
+}
+
+function clickAnswer(answerObject){
+	if(answerObject["correct"]){
+		console.log("That's Right!");
+		console.log(answerObject)
+	}else{
+		console.log("NOPE!");
+	}
 }
 
 $(document).ready(function(){
@@ -49,7 +63,7 @@ $(document).ready(function(){
 
 	//set heigth of canvas container
 	$(".chara-view").css('height', $(document).innerHeight());
-	q = new Quiz;
+	var q = new Quiz;
 	console.log(q.questions);
 	
 	displayScore(q.score);

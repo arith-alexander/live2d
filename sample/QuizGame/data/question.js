@@ -426,7 +426,6 @@ function populateQuestions(dataObject){
 		var question = {};
 		question.text = dataObject[key][0]["text"];
 		question.answers = dataObject[key][0]["answers"];
-		question.value = 50;
 		questionArray.push(question);
 	}
 	return questionArray;
