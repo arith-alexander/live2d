@@ -295,6 +295,7 @@ function populateQuestions(dataObject){
 }
 
 function displayScore(score){
+
 	$("#score").html(score);
 }
 

@@ -16,7 +16,6 @@ var setBackground = function(element){
 }
 
 
-
 $(document).ready(function(){
 	//set up the bg
 	setBackground($("#glcanvas"));
