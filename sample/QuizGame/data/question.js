@@ -445,6 +445,15 @@ function displayScore(score){
 	$("#score").html(score);
 }
 
+function clickAnswer(answerObject){
+	if(answerObject["correct"]){
+		console.log("That's Right!");
+		console.log(answerObject)
+	}else{
+		console.log("NOPE!");
+	}
+}
+
 function displayQuestion(question){
 	var answers = question["answers"];
 	$("#question .shade p").html(question.text.jp);
@@ -460,7 +469,7 @@ function displayQuestion(question){
 			$(this).css("background-color", "pink");
 
 		});
-
-
 	})
+
+
 }
