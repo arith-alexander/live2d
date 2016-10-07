@@ -431,3 +431,36 @@ function populateQuestions(dataObject){
 	return questionArray;
 }
 
+function displayScore(score){
+	zeroes = "";
+	console.log(score.length);
+	diff = 4 - score.toString.length;
+	if(diff > 0){
+		for(i=1;i<diff;i++){
+			zeroes+= "0";
+			console.log(zeroes);
+		}
+		score = zeroes+score;
+	}
+	$("#score").html(score);
+}
+
+function displayQuestion(question){
+	var answers = question["answers"];
+	$("#question .shade p").html(question.text.jp);
+	answerboxes = $("#answerbox ul li");
+	console.log(answerboxes);
+	$.each(answerboxes, function(){
+		thisanswer = answers.pop();
+		console.log(thisanswer);
+		$(this).html(thisanswer["text"]["jp"]);
+		$(this).attr("data-score", thisanswer.points);
+		$(this).attr("data-aID", 0);
+		$(this).click(function(){
+			$(this).css("background-color", "pink");
+
+		});
+
+
+	})
+}
