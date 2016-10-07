@@ -17,14 +17,17 @@ var setBackground = function(element){
 
 
 
-
 $(document).ready(function(){
 	//set up the bg
 	setBackground($("#glcanvas"));
 
 	//set heigth of canvas container
 	$(".chara-view").css('height', $(document).innerHeight());
-
+	var q = new Quiz;
+	console.log(q.questions);
+	
+	displayScore(q.score);
+	displayQuestion(q.questions[0]);
 
 });
 
