@@ -93,11 +93,60 @@
             }
 
         </style>
-        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script> 
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                var app = sampleApp1();
+                var quizObj = new Quiz();
+                quizObj.setApp(app);
+
+                $("#expression01").click(function(){
+                    quizObj.setExpression("f01");
+                });
+
+                $("#expression02").click(function(){
+                    quizObj.setExpression("f02");
+                });
+
+                $("#expression03").click(function(){
+                    quizObj.setExpression("f03");
+                });
+
+                $("#expression04").click(function(){
+                    quizObj.setExpression("f04");
+                });
+
+                $("#expression05").click(function(){
+                    quizObj.setExpression("f05");
+                });
+
+                $("#expression06").click(function(){
+                    quizObj.setExpression("f06");
+                });
+
+                $("#expression07").click(function(){
+                    quizObj.setExpression("f07");
+                });
+
+                $("#expression08").click(function(){
+                    quizObj.setExpression("f08");
+                });
+
+            });
+        </script>
 
     </head>
 
-    <body onload="sampleApp1()">
+    <body>
+        <button id="expression01" class="active">Expr01</button>
+        <button id="expression02" class="active">Expr02</button>
+        <button id="expression03" class="active">Expr03</button>
+        <button id="expression04" class="active">Expr04</button>
+        <button id="expression05" class="active">Expr05</button>
+        <button id="expression06" class="active">Expr06</button>
+        <button id="expression07" class="active">Expr07</button>
+        <button id="expression08" class="active">Expr08</button>
         
         <p>
             <button id="btnChange" class="active">Change Model</button>
@@ -125,6 +174,7 @@
         <script src="src/LAppModel.js"></script>
         <script src="src/LAppLive2DManager.js"></script>
         <script src="src/SampleApp1.js"></script>
+        <script src="data/question.js"></script>
 
     </body>
 </html>

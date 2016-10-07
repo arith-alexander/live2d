@@ -389,4 +389,20 @@ var quizQuestions = [{
 				"correct" : false 	
 			}]	
 	}]									
-}]
+}];
+
+function Quiz() {
+
+	this.app = null;
+
+	this.setApp = function(app) {
+		this.app = app;
+	};
+
+	this.setExpression = function(expression){
+		if(this.app.live2DMgr.models.length) {
+			this.app.live2DMgr.models[0].setExpression(expression);
+		}
+	}
+
+}
