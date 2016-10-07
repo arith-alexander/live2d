@@ -1,7 +1,7 @@
 var chara = [];
 var canvas = [];
 var i = 0;
-var CAN_SIZE = 340;
+var CAN_SIZE = 340; 
 
 // キャンバスボタン押下イベント
 function button_click(){

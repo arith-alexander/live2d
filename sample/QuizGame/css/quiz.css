@@ -1,0 +1,295 @@
+html, body {
+    oveflow: hidden;
+    height: 100%;
+}
+
+body{
+    margin:0px ;
+    padding:0px ;
+}
+
+.overlay {
+	position:absolute !important;
+	top:0 !important;
+	left:0 !important;
+	height:100%;
+	z-index: 3;
+}
+ 
+.chara-view{
+	position:absolute !important;
+	top:0 !important;
+	left:0 !important;
+	height: 100%;
+
+}
+
+#question {
+	height:250px !important;
+	border-radius: 25px;
+	background: #000;
+	opacity: 1;
+}
+
+#question p {
+	max-width:100%;
+	height:100%;
+	opacity:1;
+	color:#fff;
+	font-size:2em;
+	padding:20px;
+	
+}
+
+#answerbox ul li {
+	display:inline-block;
+	list-style:none;
+	width:45%;
+	height:45%;
+	background-color:#fff;
+	border: 1px solid #000;
+	color: #000;
+	font-size: 40px;
+	border-radius:10px;
+	padding:20px 5px;
+	margin:5px;
+}
+
+#score, #timer {
+	font-size:60px;
+	text-align:center;
+	color: #fff;
+	text-shadow: 2px 2px #000;
+	padding-top:25px;
+
+}
+
+.thickline {
+	border: 3px dotted #10ff00 !important;
+}
+
+
+#glcanvas {
+    /*
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    */
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url(../assets/image/class.jpg);
+}
+
+#btnChange {
+	display:none;
+}
+ 
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 20px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -moz-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    -webkit-box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    box-shadow:
+        0px 1px 3px rgba(0,0,0,0.5),
+        inset 0px 0px 1px rgba(255,255,255,0.7);
+    text-shadow:
+        0px -1px 0px rgba(0,0,0,0.4),
+        0px 1px 0px rgba(255,255,255,0.3);
+}
+
+button.active {
+    background: linear-gradient(
+        to bottom, 
+        #3498db, 
+        #2980b9);
+    background: -moz-linear-gradient(
+        top,
+        #3498db 0%,
+        #2980b9);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#3498db),
+        to(#2980b9));
+    border: 1px solid #2980b9;
+}
+
+button.inactive {
+    background: linear-gradient(
+        to bottom, 
+        #e74c3c, 
+        #c0392b);
+    background: -moz-linear-gradient(
+        top,
+        #e74c3c 0%,
+        #c0392b);
+    background: -webkit-gradient(
+        linear, left top, left bottom,
+        from(#e74c3c),
+        to(#c0392b));
+    border: 1px solid #c0392b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/*
+	Variable Grid System (Fluid Version).
+	Learn more ~ http://www.spry-soft.com/grids/
+	Based on 960 Grid System - http://960.gs/ & 960 Fluid - http://www.designinfluences.com/
+
+	Licensed under GPL and MIT.
+*/
+
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	width: 100%;
+	/*margin-left: 4%;
+	margin-right: 4%;*/
+}
+
+/* Grid >> Global  Added colors for ease of messing with
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 1%;
+	margin-right: 1%;
+}
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+	margin-left: 0;
+}
+
+.omega {
+	margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+	width:6.333%;
+}
+
+.container_12 .grid_2 {
+	width:14.667%;
+}
+
+.container_12 .grid_3 {
+	width:23.0%;
+}
+
+.container_12 .grid_4 {
+	width:31.333%;
+}
+
+.container_12 .grid_5 {
+	width:39.667%;
+}
+
+.container_12 .grid_6 {
+	width:48.0%;
+}
+
+.container_12 .grid_7 {
+	width:56.333%;
+}
+
+.container_12 .grid_8 {
+	width:64.667%;
+}
+
+.container_12 .grid_9 {
+	width:73.0%;
+}
+
+.container_12 .grid_10 {
+	width:81.333%;
+}
+
+.container_12 .grid_11 {
+	width:89.667%;
+}
+
+.container_12 .grid_12 {
+	width:98.0% !important;
+}
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}

@@ -1,5 +1,5 @@
 /**
-*  Sample.js
+*  Sample.js 
 *
 *  You can modify and use this source freely
 *  only for the development of application related Live2D.
@@ -90,6 +90,8 @@ Simple.prototype.initLoop = function(canvas)
         Simple.myerror("Failed to create WebGL context.");
         return;
     }
+
+
 
     
     Live2D.init();

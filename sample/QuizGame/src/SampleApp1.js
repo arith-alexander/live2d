@@ -43,6 +43,8 @@ function initL2dCanvas(canvasId)
 {
     
     this.canvas = document.getElementById(canvasId);
+    this.canvas.width = window.innerWidth;
+    this.canvas.height = window.innerHeight;
     
     
     if(this.canvas.addEventListener) {
