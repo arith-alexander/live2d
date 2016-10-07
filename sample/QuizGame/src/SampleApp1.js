@@ -35,6 +35,7 @@ function sampleApp1()
     
     
     init();
+    return this;
 }
 
 

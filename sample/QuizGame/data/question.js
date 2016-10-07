@@ -395,9 +395,25 @@ var quizQuestions = [{
 	}]									
 }];
 
-var questions = [];
 
-function Quiz(){
+
+
+console.log("Hello World");
+
+function Quiz() {
+
+	this.app = null;
+
+	this.setApp = function(app) {
+		this.app = app;
+	};
+
+	this.setExpression = function(expression){
+		if(this.app.live2DMgr.models.length) {
+			this.app.live2DMgr.models[0].setExpression(expression);
+		}
+	}
+
 	this.questions = populateQuestions(quizQuestions[0]);
 	this.score = 77;
 
@@ -416,9 +432,3 @@ function populateQuestions(dataObject){
 	return questionArray;
 }
 
-
-
-
-
-
-console.log("Hello World");
