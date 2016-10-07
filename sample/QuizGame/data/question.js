@@ -395,26 +395,30 @@ var quizQuestions = [{
 	}]									
 }];
 
-class quizQuestion {
-	constructor(){
-		var qInfo = quizQuestions[0]["q1"];
-		//console.log(qInfo);
-		this.text = qInfo["text"];
-		//this.text.jp = qInfo["text"]["jp"];
-		this.answers = [];
-		this.value = 500;
+var questions = [];
 
-		//var a = qInfo["answers"]
+function Quiz(){
+	this.questions = populateQuestions(quizQuestions[0]);
+	this.score = 77;
 
-		//for(i=0;i <a.length; i++){
-		//	var answer = {};
-		//	answer.text.en = a["text"]["en"];
-		//	answer.text.jp = a["text"]["jp"];
+}
+
+function populateQuestions(dataObject){
+	var questionArray = [];
+	for(var key in dataObject){
+		console.log("??");
+		var question = {};
+		question.text = dataObject[key][0]["text"];
+		question.answers = dataObject[key][0]["answers"];
+		question.value = 50;
+		questionArray.push(question);
 	}
-	
+	return questionArray;
 }
 
 
-q = new quizQuestion;
-console.log(q);
+
+
+
+
 console.log("Hello World");
